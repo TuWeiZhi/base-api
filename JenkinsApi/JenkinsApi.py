@@ -40,9 +40,7 @@ def create_nodes(list_info):
 if __name__ == "__main__":
     # 调用jenkins服务
     j = start_service()
-    # 创建节点
-    # create_node(j,name,hostIP,port)
-    list_info = csv_info()
     # 批量创建节点
+    list_info = csv_info()
     create_nodes(list_info)
     

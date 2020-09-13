@@ -9,9 +9,12 @@ pipeline {
     stage('shell') {
       steps {
         sh '''whoami
-'''
+echo $dt'''
       }
     }
 
+  }
+  environment {
+    dt = 'date +"%Y-%m-%d" '
   }
 }

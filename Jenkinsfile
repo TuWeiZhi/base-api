@@ -9,8 +9,13 @@ pipeline {
     stage('shell') {
       steps {
         sh '''whoami
-dt=`date +"%Y-%m-%d"`
-echo $dt'''
+dt=`date +"%Y-%m-%d"`'''
+      }
+    }
+
+    stage('date') {
+      steps {
+        sh 'echo $dt'
       }
     }
 

@@ -15,7 +15,7 @@ dt=`date +"%Y-%m-%d"`'''
 
     stage('date') {
       steps {
-        sh 'echo $dt'
+        sh 'docker run -tid --name=back-fish-`date +"%Y-%m-%d"` tuweizhi/basic-ubuntu18:20200626'
       }
     }
 

@@ -15,6 +15,6 @@ echo $dt'''
 
   }
   environment {
-    dt = 'date +"%Y-%m-%d" '
+    dt = '`date +"%Y-%m-%d" `'
   }
 }
